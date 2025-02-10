@@ -8,7 +8,7 @@ exports.prettyBN = prettyBN;
 exports.getEarnedByStakingByIndex = getEarnedByStakingByIndex;
 exports.sleep = sleep;
 exports.toShortAddress = toShortAddress;
-const ethers_1 = require("ethers");
+const ethers_v6_1 = require("ethers-v6");
 function hasEarned(earnedByStaking) {
     let result = false;
     if (earnedByStaking !== undefined) {
@@ -65,11 +65,11 @@ function prettyBN(valueBN, customDecimals) {
         let valueToShow;
         try {
             if (valueBN instanceof BigInt) {
-                valueToShow = ethers_1.ethers.formatEther(valueBN.toString());
+                valueToShow = ethers_v6_1.ethers.formatEther(valueBN.toString());
                 result = toFixed(valueToShow, decimals);
             }
             else if (typeof (valueBN) === 'bigint') {
-                valueToShow = ethers_1.ethers.formatEther(valueBN.toString());
+                valueToShow = ethers_v6_1.ethers.formatEther(valueBN.toString());
                 result = toFixed(valueToShow, decimals);
             }
             else if (typeof (valueBN) === 'number') {

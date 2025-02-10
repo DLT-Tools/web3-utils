@@ -1,4 +1,4 @@
-import { ethers } from 'ethers';
+import { ethers } from 'ethers-v6';
 
 export function hasEarned(earnedByStaking: any) {
     let result = false;

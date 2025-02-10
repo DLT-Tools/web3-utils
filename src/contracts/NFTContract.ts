@@ -5,7 +5,7 @@ import {
   JsonRpcSigner,
   Result,
   Wallet,
-} from "ethers";
+} from "ethers-v6";
 import BaseContract from "./BaseContract";
 import IEVMChainData from "../IEVMChainData";
 import { checkChainId } from "../lib/connectWallet";

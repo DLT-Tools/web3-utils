@@ -1,4 +1,4 @@
-import { BrowserProvider, JsonRpcSigner } from "ethers";
+import { BrowserProvider, JsonRpcSigner } from "ethers-v6";
 import EventEmitter from "events";
 import IEVMChainData from "./IEVMChainData";
 declare class Web3Wallet {

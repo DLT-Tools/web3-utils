@@ -4,7 +4,7 @@ import {
   JsonRpcProvider,
   JsonRpcSigner,
   Wallet,
-} from "ethers";
+} from "ethers-v6";
 import IEVMChainData from "../IEVMChainData";
 
 class BaseContract {

@@ -13,7 +13,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const connectWallet_1 = require("./lib/connectWallet");
-const ethers_1 = require("ethers");
+const ethers_v6_1 = require("ethers-v6");
 const events_1 = __importDefault(require("events"));
 const blockchainUtils_1 = require("./blockchain/blockchainUtils");
 class Web3Wallet {
@@ -32,7 +32,7 @@ class Web3Wallet {
             this.isConnected = true;
             this.address = userAccount;
             this.shortAddress = (0, blockchainUtils_1.toShortAddress)(userAccount);
-            this.provider = new ethers_1.ethers.BrowserProvider(window.ethereum);
+            this.provider = new ethers_v6_1.ethers.BrowserProvider(window.ethereum);
             this.signer = yield this.provider.getSigner();
             this.eventEmitter.emit("onConnectedChanged", this.isConnected, this.address, this.shortAddress);
             window.ethereum.on("accountsChanged", (accounts) => {

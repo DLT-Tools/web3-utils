@@ -1,5 +1,5 @@
 import { connect, reconnect } from "./lib/connectWallet";
-import { BrowserProvider, JsonRpcSigner, ethers } from "ethers";
+import { BrowserProvider, JsonRpcSigner, ethers } from "ethers-v6";
 import EventEmitter from "events";
 import IEVMChainData from "./IEVMChainData";
 import { toShortAddress } from "./blockchain/blockchainUtils";

@@ -1,4 +1,4 @@
-import { BrowserProvider, JsonRpcProvider, JsonRpcSigner, Wallet } from "ethers";
+import { BrowserProvider, JsonRpcProvider, JsonRpcSigner, Wallet } from "ethers-v6";
 import BaseContract from "./BaseContract";
 import IEVMChainData from "../IEVMChainData";
 declare class NFTContract extends BaseContract {
